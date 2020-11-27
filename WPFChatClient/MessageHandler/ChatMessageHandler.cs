@@ -2,7 +2,7 @@
 using System;
 using System.Linq;
 
-namespace WpfApp2.MessageHandler
+namespace WPFChatClient.MessageHandler
 {
     public class ChatMessageHandler : IMessageHandler
     {

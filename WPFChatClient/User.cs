@@ -1,4 +1,4 @@
-﻿namespace WpfApp2
+﻿namespace WPFChatClient
 {
     public class User
     {

@@ -1,6 +1,6 @@
 ﻿using ChatProtocol;
 
-namespace WpfApp2.MessageHandler
+namespace WPFChatClient.MessageHandler
 {
     public interface IMessageHandler
     {

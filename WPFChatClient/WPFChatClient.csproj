@@ -11,7 +11,7 @@
       <HintPath>..\ReferencedAssemblies\ChatProtocol.dll</HintPath>
     </Reference>
     <Reference Include="ClientLibrary">
-      <HintPath>..\ReferencedAssemblies\ClientLibrary.dll</HintPath>
+      <HintPath>..\..\ChatClient\ClientLibrary\bin\Debug\netcoreapp3.1\ClientLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
 

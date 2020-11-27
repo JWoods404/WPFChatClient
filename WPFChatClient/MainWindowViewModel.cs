@@ -1,13 +1,11 @@
 ﻿using ClientLibrary;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading;
-using WpfApp2.MessageHandler;
+using WPFChatClient.MessageHandler;
 
-namespace WpfApp2
+namespace WPFChatClient
 {
     public class MainWindowViewModel : INotifyPropertyChanged
     {
@@ -62,6 +60,13 @@ namespace WpfApp2
             set { chatHistory = value; NotifyPropertyChanged(); }
         }
 
+        public void Register()
+        {
+            client = new Client("127.0.0.1", 13000);
+            client.Register(username,password);
+
+        }
+
         public void Connect()
         {
             ChatHistory = string.Empty;
@@ -72,7 +77,9 @@ namespace WpfApp2
 
         public void Disconnect()
         {
+            ChatHistory = string.Empty;
             client.Disconnect();
+            IsConnected = false;
         }
 
         public void RequestUsers()

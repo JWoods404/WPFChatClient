@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Text.Json;
 
-namespace WpfApp2.MessageHandler
+namespace WPFChatClient.MessageHandler
 {
     public class UserListResponseMessageHandler : IMessageHandler
     {

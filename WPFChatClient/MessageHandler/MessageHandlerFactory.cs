@@ -1,4 +1,4 @@
-﻿namespace WpfApp2.MessageHandler
+﻿namespace WPFChatClient.MessageHandler
 {
     public static class MessageHandlerFactory
     {
@@ -14,6 +14,8 @@
                     return new UserCountMessageHandler();
                 case 7:
                     return new UserListResponseMessageHandler();
+                case 9:
+                    return new UserRegisterResponseMessageHandler();
             }
 
             return null;
